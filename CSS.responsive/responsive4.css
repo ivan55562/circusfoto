@@ -1,0 +1,113 @@
+/*responsive4.css --> max-width: 500px*/
+body { 
+    background: #370405 url("/images/logo.png") no-repeat fixed center; 
+    background-size: 140px 140px;
+}
+
+/*LOADER CSS*/
+/* Center the loader */
+#loader {
+  position: absolute;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-0px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-0px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+} 
+/*END OF LOADER CSS*/
+
+/*PAGE CSS*/
+img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.img_backgroundRED {
+  z-index: 5;
+  top: 370px;
+  left: 0px;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  
+}
+.img_backgroundPHOTO {
+  z-index: 3;
+  position: ;
+  display: ;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+.img_background_overPHOTO {
+  z-index: 3;
+  top: 0px;
+  left: 0px;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+.img_POSTER {
+  z-index: 5;
+  top: 200px;
+  left: 150px;
+}
+h1 {
+    z-index: 8;
+    position: absolute;
+    top: 200px;
+    left: 620px;
+    font-family: Candara;
+    font-size: 49px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    color: #fff24d;
+    text-shadow: 0px 3px #000000;
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+}
+div.text1 {
+    z-index: 8;
+    position: absolute;
+    top: 360px;
+    left: 622px;
+    font-family: Candara;
+    font-size: 20px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+    color: #fff24d;
+    text-shadow: 0px 2px #000000;
+    text-rendering: optimizeLegibility;
+    line-height: 1.2;
+}
+/* END OF PAGE CSS*/
